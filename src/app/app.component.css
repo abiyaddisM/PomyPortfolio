@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+app-nav-bar{
+      height: fit-content;
+  width: 100%;
+}
+.page{
+  display: flex;
+  justify-content: center;
+}
+app-home-page{
+  background-color: green;
+  width: 100%;
+}
+
