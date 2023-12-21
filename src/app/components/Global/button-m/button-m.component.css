@@ -2,18 +2,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--blue-dark-color);
+  background-color: var(--main-color);
+  box-shadow: 0px 10px 17.5px 0px rgba(215, 0, 78, 0.63);
+  opacity: 0.9;
   color: white;
-  padding: 12px 14px;
   border-radius: 4px;
   cursor: pointer;
   transition: 0.4s;
+  font-size: 1.4rem;
 }
+
 .btn:hover{
-  background-color: #4968de;
+  opacity: 1;
+}
+.btn:active{
+  opacity: 0.8;
+  box-shadow: 0px 10px 17.5px 0px rgba(215, 0, 78, 0.47);
 }
 i{
-  font-size: 16px;
+  font-size: 17px;
 }
 @media screen and (max-width: 1028px) {
   .btn {

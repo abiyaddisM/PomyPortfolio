@@ -11,7 +11,11 @@ import {RouterModule} from "@angular/router";
 import { ContactPageComponent } from './components/Contact Page/contact-page/contact-page.component';
 import { ProfilePictureComponent } from './components/Home Page/profile-picture/profile-picture.component';
 import {NgOptimizedImage} from "@angular/common";
-import { HeroSectionComponent } from './components/hero-section/hero-section.component';
+import { HeroSectionComponent } from './components/Home Page/hero-section/hero-section.component';
+import { AboutParagraphComponent } from './components/About us Page/about-paragraph/about-paragraph.component';
+import { ProjectCardComponent } from './components/Project Page/project-card/project-card.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProjectsViewComponent } from './components/Project Page/projects-view/projects-view.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
     ProjectsPageComponent,
     ContactPageComponent,
     ProfilePictureComponent,
-    HeroSectionComponent
+    HeroSectionComponent,
+    AboutParagraphComponent,
+    ProjectCardComponent,
+    FooterComponent,
+    ProjectsViewComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +39,7 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
       {path: 'Home', component: HomePageComponent},
       {path: 'About-Us', component: AboutUsPageComponent},
       {path: 'Projects', component: ProjectsPageComponent},
+      {path: 'Projects/view', component: ProjectsViewComponent},
       {path: 'Contact', component: ContactPageComponent}
     ]),
     NgOptimizedImage

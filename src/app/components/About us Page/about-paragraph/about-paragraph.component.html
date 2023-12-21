@@ -1,0 +1,26 @@
+<div class="paragraph-container">
+  <h2 class="title">
+    About Me
+  </h2>
+
+ <div class="paragraph">
+   <p>
+      Welcome to my digital space! I'm Bizawit Merawi, a passionate communicator with a degree in Communication from Northwestern University.
+     My journey has been a delightful exploration of the intricate web woven by words, visuals, and the art of conveying messages.
+   </p>
+   <p>
+     During my time at Northwestern, I honed my skills in understanding the nuances of effective communication,
+     embracing the power of storytelling to connect, inspire, and resonate. I believe that every word carries weight,
+     and every visual has the potential to evoke emotions and spark meaningful conversations.
+   </p>
+ </div>
+
+  <div class="stats-container">
+    <div class="stats-package"
+    *ngFor="let stat of statsArr">
+      <h2>{{stat.title}}</h2>
+      <p>{{stat.text}}</p>
+    </div>
+  </div>
+  <app-button-m buttonText="Download CV" padding="14px 16px"></app-button-m>
+</div>

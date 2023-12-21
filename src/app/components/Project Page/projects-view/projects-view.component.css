@@ -1,0 +1,162 @@
+section{
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  background: rgba(7, 11, 19, 0.57);
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  backdrop-filter: blur(7px);
+  padding-right: 15px;
+}
+.close-button{
+  position: fixed;
+  fill: rgba(228, 228, 228, 0.37);
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+  width: 50px;
+}
+.close-button img{
+  width: 100%;
+}
+.sidebar-container{
+  width: 390px;
+  height: 100%;
+  margin: 0 15px;
+  background-color: #070B13;
+  margin-top: 15px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.image-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding-top: 15px;
+
+}.image-container img{
+   width: 100%;
+
+ }
+
+.sidebar{
+  padding: 30px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(46, 44, 44, 0.39);
+  min-height: 100px;
+
+}
+.sidebar-overflow{
+  overflow: auto;
+
+}
+.sidebar-overflow::-webkit-scrollbar {
+  width: 0px;
+}
+.des-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar .des-title{
+  color: #FFF;
+  font-family: Playfair Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.sidebar .description{
+  color: #D8D8D8;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 151.4%; /* 21.196px */
+  align-self: stretch;
+}
+.stats-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.stats-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+
+}
+
+.stats-title{
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.stats-des{
+  color: #E5E2E2;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+.color-tool{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  /*background: linear-gradient(270deg, #2FDBD1FF 0%, #6F6CFFFF 100%);*/
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+.sidebar .btn{
+  display: flex;
+  padding: 11px 14px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.82);
+  color: #2E2A2A;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sidebar .btn:hover {
+  background: rgb(255, 255, 255);
+
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.43);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
