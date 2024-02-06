@@ -1,6 +1,22 @@
+.contact-section{
+  padding: 40px;
+}
 .contact-container{
   display: flex;
+  align-items: center;
   justify-content: center;
-  color: var(--blue-dark-color);
+  gap: 4rem;
+  width: 100%;
+}
+.contact-input{
+max-width: 65rem;
+}
 
+@media (max-width:1028px ) {
+.contact-container{
+  flex-direction: column;
+}
+.contact-input{
+  width: 100%;  
+}
 }

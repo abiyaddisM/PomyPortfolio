@@ -11,7 +11,10 @@ import {RouterModule} from "@angular/router";
 import { ContactPageComponent } from './components/Contact Page/contact-page/contact-page.component';
 import { ProfilePictureComponent } from './components/Home Page/profile-picture/profile-picture.component';
 import {NgOptimizedImage} from "@angular/common";
-import { HeroSectionComponent } from './components/hero-section/hero-section.component';
+import { HeroSectionComponent } from './components/Home Page/hero-section/hero-section.component';
+import { HomeFollowMeComponent } from './components/Home Page/home-follow-me/home-follow-me.component';
+import { ContactHeroComponent } from './components/Contact Page/contact-hero/contact-hero.component';
+import { ContactInputComponent } from './components/Contact Page/contact-input/contact-input.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
     ProjectsPageComponent,
     ContactPageComponent,
     ProfilePictureComponent,
-    HeroSectionComponent
+    HeroSectionComponent,
+    HomeFollowMeComponent,
+    ContactHeroComponent,
+    ContactInputComponent
   ],
   imports: [
     BrowserModule,
