@@ -1,5 +1,18 @@
-.home-container{
+
+.home-page-container{
+  width: 100%;
+  padding: 20px;
+}
+.hero-profile{
   display: flex;
+  align-items: center;
   justify-content: center;
-  color: var(--blue-dark-color);
+}
+@media (max-width: 1028px) {
+  .hero-profile{
+    flex-direction: column;
+  }
+ .Image{
+   order: -1;
+ }
 }

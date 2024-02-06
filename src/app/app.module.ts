@@ -16,6 +16,9 @@ import { AboutParagraphComponent } from './components/About us Page/about-paragr
 import { ProjectCardComponent } from './components/Project Page/project-card/project-card.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProjectsViewComponent } from './components/Project Page/projects-view/projects-view.component';
+import { AboutUsImageComponent } from './components/About us Page/about-us-image/about-us-image.component';
+import { ButtonNathanComponent } from './components/Global/button-nathan/button-nathan.component';
+import { PortifolioImagesComponent } from './components/Home Page/portifolio-images/portifolio-images.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { ProjectsViewComponent } from './components/Project Page/projects-view/p
     AboutParagraphComponent,
     ProjectCardComponent,
     FooterComponent,
-    ProjectsViewComponent
+    ProjectsViewComponent,
+    AboutUsImageComponent,
+    ButtonNathanComponent,
+    PortifolioImagesComponent
   ],
   imports: [
     BrowserModule,

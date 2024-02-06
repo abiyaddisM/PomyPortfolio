@@ -1,0 +1,55 @@
+*{
+  color: white;
+}
+.hero-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 550px;
+  gap: 12px;
+}
+.welcome{
+  background: blue;
+  width: fit-content;
+  padding: 12px 24px;
+  text-align: center;
+  border-radius: 6px;
+  background: rgba(226, 23, 76, 0.42);
+}
+.name{
+  font-size: var(--large-font);
+}
+.job-title{
+  font-size: var(--small-font);
+}
+.hero-description{
+  font-size: var(--small-font);
+  text-align: left;
+  line-height: 22px;
+}
+@media (max-width: 1028px) {
+  .hero-container{
+    align-items: center;
+    gap: 15px;
+  }
+  .welcome, .job-title{
+    display:none;
+  }
+  .hero-description{
+    text-align: center;
+    color: #E8E7E7;
+    font-size: var(--small-font);
+  }
+  .name{
+    text-align: center;
+    color: #949494;
+
+  }
+  span{
+    display: none;
+  }
+  .btn{
+
+}
+
+}

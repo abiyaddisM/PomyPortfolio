@@ -22,5 +22,7 @@
       <p>{{stat.text}}</p>
     </div>
   </div>
-  <app-button-m buttonText="Download CV" padding="14px 16px"></app-button-m>
+  <app-button-m  (click)="downloadFile()"
+                 class="btn" buttonText="Download CV" padding="14px 16px" icon="ri-download-line">
+  </app-button-m>
 </div>

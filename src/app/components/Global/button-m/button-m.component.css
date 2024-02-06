@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 4px;
   background-color: var(--main-color);
   box-shadow: 0px 10px 17.5px 0px rgba(215, 0, 78, 0.63);
   opacity: 0.9;
