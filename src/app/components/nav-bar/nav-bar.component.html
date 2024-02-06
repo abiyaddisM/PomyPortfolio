@@ -1,55 +1,30 @@
 <header class="head-container">
   <div class="h-container1">
-    <h2 id="logo"
-        routerLink="">
-      BIZAWIT
-    </h2>
+    <img id="logo" src="assets/Image/logo.png" alt="">
   </div>
 
   <div class="h-container2">
 
-    <ul class="h-list-container " [class.drop-down]="state">
+    <ul class="h-list-container " [class.drop-down]="this.service.state" appCollaps>
 
-      <a class="menu_btn inner-menu"><i
-        class="ri-menu-2-line"
-        (click)="changeState()"></i></a>
 
       <li class="h-list">
-        <a
-           routerLink="Home"
-           routerLinkActive="dash"
-           class="h-button">
-          Home
-        </a>
+        <a routerLink="Home" routerLinkActive="dash" class="h-button">Home</a>
       </li>
       <li class="h-list">
-        <a
-           routerLink="About-Us"
-           routerLinkActive="dash"
-           class="h-button">
-          About Us
-        </a>
+        <a routerLink="About-Us" routerLinkActive="dash" class="h-button">About Us</a>
       </li>
       <li class="h-list">
-        <a
-           routerLink="Projects"
-           routerLinkActive="dash"
-           class="h-button">
-          Projects
-        </a>
+        <a routerLink="Projects" routerLinkActive="dash" class="h-button">Projects</a>
       </li>
       <li class="h-list">
-        <a
-           routerLink="Contact"
-           routerLinkActive="dash"
-           class="h-button">
-          Contact Me
-        </a>
+        <a routerLink="Contact" routerLinkActive="dash" class="h-button">Contact Me</a>
       </li>
+
     </ul>
-    <app-button-m></app-button-m>
-    <a class="menu_btn"><i
-      class="ri-menu-2-line"
-      (click)="changeState()"></i></a>
+    <app-button-m buttonText="Resume" padding="14px 14px"></app-button-m>
+    <a class="menu_btn">
+      <i class="ri-menu-2-line" appPresss ></i>
+    </a>
   </div>
 </header>

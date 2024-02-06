@@ -1,0 +1,63 @@
+<section>
+ <nav>
+   <div class="close-button" routerLink="/Projects">
+     <img src="assets/icon/close2.svg" >
+   </div>
+
+   <h2 class="project-title">Blender Movie</h2>
+
+
+   <button class="btn inner-menu" (click)="changeState()">Description</button>
+ </nav>
+
+  <div class="image-container">
+   <div>
+     <iframe
+       width="100%"
+       height="100%"
+       src="https://www.youtube.com/embed/TBEofA_AFV8"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+       allowfullscreen
+     ></iframe>
+     <img *ngFor="let src of srcs" [src]="src" alt="">
+
+   </div>
+  </div>
+
+  <div class="sidebar-container" [class.hide-sidebar]="state">
+
+    <div class="sidebar-overflow">
+      <div class="des-container sidebar">
+        <h2 class="des-title">Description</h2>
+        <p class="description">Immerse yourself in the captivating world of "Ephemeral Elegance," a stunning 3D masterpiece that transcends traditional boundaries. This intricately crafted work of art seamlessly blends cutting-edge technology with artistic finesse, inviting viewers into a realm where form and function harmonize in perfect balance.<br><br>As you navigate through this digital landscape, you'll be mesmerized by the play of light and shadow, revealing the dynamic textures and meticulously detailed surfaces. The artist skillfully manipulates perspective, inviting you to explore the depths of the composition and discover hidden nuances that evolve as you move through the virtual space.</p>
+      </div>
+      <div class="stats-container sidebar">
+
+        <div class="stats-container1">
+          <h3 class="stats-title">Title</h3>
+          <h5 class="stats-des">Blender Movie</h5>
+        </div>
+
+        <div class="stats-container1">
+          <h3 class="stats-title">Date</h3>
+          <h5 class="stats-des">January 2023 - March 2023</h5>
+        </div>
+        <div class="stats-container1">
+          <h3 class="stats-title">Client</h3>
+          <h5 class="stats-des">Personal</h5>
+        </div>
+        <div class="stats-container1">
+          <h3 class="stats-title">Tools</h3>
+          <div *ngFor="let tool of tools;let i=index" class="color-tool" [style.background]="colors[i]">{{tool}}</div>
+        </div>
+        <button class="btn">Download PDF
+          <i class='material-symbols-outlined'>download</i>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+

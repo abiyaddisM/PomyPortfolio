@@ -15,6 +15,12 @@ import { HeroSectionComponent } from './components/Home Page/hero-section/hero-s
 import { HomeFollowMeComponent } from './components/Home Page/home-follow-me/home-follow-me.component';
 import { ContactHeroComponent } from './components/Contact Page/contact-hero/contact-hero.component';
 import { ContactInputComponent } from './components/Contact Page/contact-input/contact-input.component';
+import { AboutParagraphComponent } from './components/About us Page/about-paragraph/about-paragraph.component';
+import { ProjectCardComponent } from './components/Project Page/project-card/project-card.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProjectsViewComponent } from './components/Project Page/projects-view/projects-view.component';
+import {CollapsDirective, pressDirective} from './directive/collaps.directive';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -30,13 +36,22 @@ import { ContactInputComponent } from './components/Contact Page/contact-input/c
     HomeFollowMeComponent,
     ContactHeroComponent,
     ContactInputComponent
+    AboutParagraphComponent,
+    ProjectCardComponent,
+    FooterComponent,
+    ProjectsViewComponent,
+    CollapsDirective,
+    CollapsDirective,
+    pressDirective
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path: 'Home', component: HomePageComponent},
       {path: 'About-Us', component: AboutUsPageComponent},
       {path: 'Projects', component: ProjectsPageComponent},
+      {path: 'Projects/view', component: ProjectsViewComponent},
       {path: 'Contact', component: ContactPageComponent}
     ]),
     NgOptimizedImage

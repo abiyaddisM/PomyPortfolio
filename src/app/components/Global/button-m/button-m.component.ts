@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-button-m',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./button-m.component.css']
 })
 export class ButtonMComponent {
-icon='material-symbols-outlined';
+  @Input() isIcon=true;
+  @Input() fontSize='';
+  @Input() buttonText='';
+  @Input()  padding='';
 }

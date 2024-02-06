@@ -1,6 +1,3 @@
-<button class="btn">
-  Resume
-  <i class='{{icon}}'>
-download
-</i>
+<button [style.font-size]="fontSize" [style.padding]="padding"  class="btn">{{buttonText}}
+  <i *ngIf="isIcon" class='material-symbols-outlined'>download</i>
 </button>

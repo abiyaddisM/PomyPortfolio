@@ -1,0 +1,35 @@
+.paragraph-container{
+  width: fit-content;
+  position: relative;
+
+}
+.title{
+  font-family: 'Playfair Display', serif;
+  font-size: var(--large-font);
+  margin-bottom: 20px;
+}
+.paragraph{
+  max-width: 500px;
+  font-size: var(--small-font);
+}
+.paragraph p{
+  margin-bottom: 20px;
+}
+.stats-container{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+}
+.stats-package{
+  max-width: 150px  ;
+}
+.stats-package h2{
+  font-size: var(--large-font);
+  background: linear-gradient(45deg, #084eb6, #438fcb, #e74099);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.stats-package p{
+  font-size: var(--extra-small-font);
+}

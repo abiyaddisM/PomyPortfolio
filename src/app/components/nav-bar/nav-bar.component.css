@@ -2,15 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 90px;
-  max-width: 1240px;
+  margin: 30px 40px;
+  max-width: var(--max-width);
   width: 100%;
   transition: 0.2s;
 }
 .head-container #logo{
-  font-size: 32px;
-  color: var(--blue-dark-color);
-  font-family: 'Playfair Display', serif;
+width: 62px;
   cursor: pointer;
 
 }
@@ -32,16 +30,19 @@
 }
 .h-list-container .h-list .h-button{
   all:unset;
-  font-size: 1.5rem;
-  color: var(--blue-light-color);
+  font-size: 1.6rem;
+  color: var(--font-color);
+  opacity: 0.8;
   cursor: pointer;
+  font-weight: lighter;
   }
 .h-list-container .h-list .h-button:after {
   content: '';
   display: flex;
   width: 0; /* Set the width to 100% to create a horizontal line */
   height: 2px; /* Set the height to control the thickness of the line */
-  background-color: var(--blue-light-color);
+  background-color: var(--font-color);
+  opacity: 0.8;
   top: 20px;
   transition: 0.4s;
   border-radius: 2px;
@@ -51,11 +52,12 @@
 }
 .h-list-container .h-list .h-button.dash:after {
   width: 100%;
-  background-color: var(--blue-dark-color );
+  background-color: var(--font-color );
 }
 .menu_btn{
-  font-size: 26px;
+  font-size: 30px;
   display: none;
+  color: #dedddd;
 }
 
 
@@ -71,25 +73,29 @@
     gap: 14px;
   }
   .h-list-container {
-    background-color: rgba(21, 30, 45, 0.63);
+    background-color: rgba(40, 43, 45, 0.82);
     position: absolute;
     flex-direction: column;
-    top: 0;
-    left: 0;
+    top: 80px;
+    right: 40px;
     height: 0;
+    width: 200px;
+    border-radius: 10px;
     overflow: hidden;
-    width: 100%;
     backdrop-filter: blur(8px);
-    transition: 0.4s;
+    transition: 0.3s;
     z-index: 10;
+    display: none;
   }
   .drop-down{
-    height: 350px;
-    transition: 0.4s;
+    display: flex;
+    height: 300px;
+
+
+    transition: 0.3s;
   }
   .h-list-container .h-list .h-button {
     font-size: 1.6rem;
-    color: #65a3ea;
   }
   .menu_btn{
     display: inline;
@@ -98,6 +104,21 @@
     position: absolute;
     right: 20px;
     top: 20px;
-    color: #65a3ea;
+  }
+  .head-container #logo{
+    width: 52px;
+    cursor: pointer;
+
+  }
+}
+@media (max-width: 700px) {
+  .head-container{
+    margin: 10px 10px;
+  }
+  .h-list-container {
+
+    top: 60px;
+    right: 40px;
+
   }
 }

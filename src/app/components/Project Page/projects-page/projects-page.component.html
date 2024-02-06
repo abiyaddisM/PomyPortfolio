@@ -1,5 +1,45 @@
 <section class="project-section">
   <div class="project-container">
-    <h1>Projects</h1>
+    <div class="project-top-container">
+
+      <div class="title-container">
+        <h2 class="title">PORTFOLIO</h2>
+        <p class="section-description">This is a project section with all of my current and
+          future projects...</p>
+      </div>
+
+      <div class="filter-container">
+        <ul>
+          <li (click)="switchNav(0)" [class.active]="allPost"><a>All</a></li>
+          <li (click)="switchNav(1)" [class.active]="editing"><a>Editing</a></li>
+          <li (click)="switchNav(2)" [class.active]="animation"><a>Animation</a></li>
+          <li (click)="switchNav(3)" [class.active]="socialMedia"><a>Social Media</a></li>
+        </ul>
+        <div class="filter-button" [style.left]="buttonPosition"></div>
+
+      </div>
+
+    </div>
+    <div class="card-container">
+      <div *ngFor="let post of getFilter(); let index = index" routerLink="/Projects/view">
+        <ng-container *ngIf="index < counter">
+          <app-project-card [src]="post.url"
+                            [title]="post.title"
+                            [role]="post.role"
+                            [date]="post.date">
+          </app-project-card>
+        </ng-container>
+      </div>
+
+    </div>
+    <div class="view-button" >
+      <app-button-m padding="13px"
+                    [buttonText]="ViewButtonName"
+                    [isIcon]="false" fontSize="14px"
+                    (click)="viewMore()"
+                    [class.view-vis]="viewButtonVis">
+      </app-button-m>
+    </div>
   </div>
 </section>
+
