@@ -1,0 +1,12 @@
+.portifolio-images{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #121523;
+}
+
+@media (max-width:1028px){
+  .portifolio-images{
+    display: none;
+  }
+}

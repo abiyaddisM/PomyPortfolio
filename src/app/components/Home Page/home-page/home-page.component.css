@@ -1,7 +1,22 @@
+
+.home-page-container{
+  width: 100%;
+  padding: 20px;
+}
+.hero-profile{
 .home-section{
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
+}
+@media (max-width: 1028px) {
+  .hero-profile{
+    flex-direction: column;
+  }
+ .Image{
+   order: -1;
+ }
   width: 100%;
 }
 .home-container{

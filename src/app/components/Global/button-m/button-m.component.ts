@@ -10,4 +10,5 @@ export class ButtonMComponent {
   @Input() fontSize='';
   @Input() buttonText='';
   @Input()  padding='';
+  @Input() icon ='';
 }

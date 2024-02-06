@@ -19,6 +19,9 @@ import { AboutParagraphComponent } from './components/About us Page/about-paragr
 import { ProjectCardComponent } from './components/Project Page/project-card/project-card.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProjectsViewComponent } from './components/Project Page/projects-view/projects-view.component';
+import { AboutUsImageComponent } from './components/About us Page/about-us-image/about-us-image.component';
+import { ButtonNathanComponent } from './components/Global/button-nathan/button-nathan.component';
+import { PortifolioImagesComponent } from './components/Home Page/portifolio-images/portifolio-images.component';
 import {CollapsDirective, pressDirective} from './directive/collaps.directive';
 import {HttpClientModule} from "@angular/common/http";
 
@@ -40,6 +43,9 @@ import {HttpClientModule} from "@angular/common/http";
     ProjectCardComponent,
     FooterComponent,
     ProjectsViewComponent,
+    AboutUsImageComponent,
+    ButtonNathanComponent,
+    PortifolioImagesComponent
     CollapsDirective,
     CollapsDirective,
     pressDirective

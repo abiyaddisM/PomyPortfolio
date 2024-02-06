@@ -1,66 +1,56 @@
-.hero-section{
+*{
+  color: white;
+}
+.hero-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4rem;
-  width: 100%;
+  max-width: 550px;
+  gap: 12px;
 }
 .welcome{
-  font-size: var(--small-font);
-  font-weight: bold;
-  padding: 1rem 1.2rem 1rem 1.2rem;
-  color: white;
-  background-color: var(--blue-dark-color);
+  background: blue;
   width: fit-content;
-  border-radius: .6rem;
-  cursor: pointer;
-  transition: 0.2s;
-}
-.welcome:hover{
-    transform: translateY(-2px);
+  padding: 12px 24px;
+  text-align: center;
+  border-radius: 6px;
+  background: rgba(226, 23, 76, 0.42);
 }
 .name{
-  font-size: var(--medium-font);
-  font-weight: bold;
-  padding: .5rem 0;
-
+  font-size: var(--large-font);
 }
-.job-place-holder{
+.job-title{
   font-size: var(--small-font);
-  margin-bottom: 1rem;
 }
-.description{
+.hero-description{
   font-size: var(--small-font);
-  width: 100%;
-
+  text-align: left;
+  line-height: 22px;
 }
-@media (max-width: 830px){
-  .welcome{
-    margin: 0 auto;
+@media (max-width: 1028px) {
+  .hero-container{
+    align-items: center;
+    gap: 15px;
+  }
+  .welcome, .job-title{
+    display:none;
+  }
+  .hero-description{
+    text-align: center;
+    color: #E8E7E7;
+    font-size: var(--small-font);
   }
   .name{
     text-align: center;
-  }
-  .job-place-holder{
-    text-align: center;
-  }
-  .description{
-    text-align: center;
-  }
-}
-@media (max-width: 502px) {
-  .welcome{
-    font-size: var(--extra-small-font);
-  }
-  .name{
-    font-size:var(--small-font);
+    color: #949494;
 
   }
-  .job-place-holder{
-    font-size: var(--extra-small-font);
+  span{
+    display: none;
   }
-  .description{
-    font-size: var(--extra-small-font);
-  }
+  .btn{
+
+}
+
 
 }
