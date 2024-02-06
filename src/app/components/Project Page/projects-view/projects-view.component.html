@@ -1,13 +1,30 @@
 <section>
-  <div class="close-button" routerLink="/Projects">
-    <img src="assets/icon/close.svg" >
-  </div>
+ <nav>
+   <div class="close-button" routerLink="/Projects">
+     <img src="assets/icon/close2.svg" >
+   </div>
+
+   <h2 class="project-title">Blender Movie</h2>
+
+
+   <button class="btn inner-menu" (click)="changeState()">Description</button>
+ </nav>
 
   <div class="image-container">
-    <img *ngFor="let src of srcs" [src]="src" alt="">
+   <div>
+     <iframe
+       width="100%"
+       height="100%"
+       src="https://www.youtube.com/embed/TBEofA_AFV8"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+       allowfullscreen
+     ></iframe>
+     <img *ngFor="let src of srcs" [src]="src" alt="">
+
+   </div>
   </div>
 
-  <div class="sidebar-container">
+  <div class="sidebar-container" [class.hide-sidebar]="state">
 
     <div class="sidebar-overflow">
       <div class="des-container sidebar">

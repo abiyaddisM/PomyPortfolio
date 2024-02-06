@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 40px;
 }
 .project-container{
   display: flex;
@@ -11,7 +12,8 @@
   color: var(--font-color);
   max-width: var(--max-width);
   gap: 30px;
-  margin: 0 40px;
+  width: 100%;
+
 }
 .project-top-container{
   display: flex;
@@ -97,7 +99,6 @@
   width: 100%;
   grid-template-columns:1fr 1fr 1fr;
   gap: 10px;
-  /*grid-template-rows: ;*/
 
 }
 .view-button{
@@ -106,9 +107,13 @@
   justify-content: center;
   /*margin-top: 10px;*/
 }
-
+.view-vis{
+  display: none;
+}
 @media (max-width: 1024px) {
-
+  .project-section{
+    padding: 0 20px;
+  }
   .project-top-container{
     flex-direction: column;
     align-items: center;
@@ -131,9 +136,11 @@
 
 }
 @media (max-width: 700px) {
-
+  .project-section{
+    padding: 0 10px;
+    margin-top: 30px;
+  }
   .project-container{
-    margin: 20px;
     gap: 15px;
   }
   .title-container .title{

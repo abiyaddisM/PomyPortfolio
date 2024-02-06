@@ -6,10 +6,8 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./project-card.component.css']
 })
 export class ProjectCardComponent {
-  @Input()src="";
-  @Input()title="";
-  @Input()role="";
-  @Input()date="";
-
-
+  @Input() src = "";
+  @Input() title = "";
+  @Input() role = "";
+  @Input() date = "";
 }

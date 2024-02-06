@@ -16,6 +16,8 @@ import { AboutParagraphComponent } from './components/About us Page/about-paragr
 import { ProjectCardComponent } from './components/Project Page/project-card/project-card.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProjectsViewComponent } from './components/Project Page/projects-view/projects-view.component';
+import {CollapsDirective, pressDirective} from './directive/collaps.directive';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -31,10 +33,14 @@ import { ProjectsViewComponent } from './components/Project Page/projects-view/p
     AboutParagraphComponent,
     ProjectCardComponent,
     FooterComponent,
-    ProjectsViewComponent
+    ProjectsViewComponent,
+    CollapsDirective,
+    CollapsDirective,
+    pressDirective
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path: 'Home', component: HomePageComponent},
       {path: 'About-Us', component: AboutUsPageComponent},

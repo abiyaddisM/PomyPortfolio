@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects-view.component.css']
 })
 export class ProjectsViewComponent {
+  state=true;
   srcs=[
     'https://cdn.80.lv/api/upload/content/00/60c8348f2af3f.jpg'
     ,'https://cdn.3dmodels.org/wp-content/uploads/2021/12/06/Dodge_Sandrat.jpg'
@@ -19,4 +20,7 @@ export class ProjectsViewComponent {
     "Adobe Illustrator",
     "Blender",
   ]
+  changeState(){
+    this.state=!this.state;
+  }
 }

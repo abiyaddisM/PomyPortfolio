@@ -1,5 +1,41 @@
 <section class="contact-section">
   <div class="contact-container">
-    <h1>Contact</h1>
+    <div class="contact-info-container">
+      <h2 class="form-info-header header">Contact Me</h2>
+      <p class="info-subheader">Let’s make something new, different and more meaningful or make thing  more visual or conceptual?</p>
+
+      <div class="info-second-container">
+        <div class="info-card-container">
+          <div class="info-round">
+            <i class="ri-phone-line"></i>
+          </div>
+        </div>
+
+        <div class="info-card-container">
+          <div class="info-round">
+            <i class="ri-mail-fill"></i>
+          </div>
+        </div>
+        <div class="info-card-container">
+          <div class="info-round">
+            <i class="ri-map-pin-line"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="form-container">
+      <h2 class="form-header header">Drop a Line</h2>
+      <form action="" class="form">
+        <div class="top-input-container">
+          <input type="text" class="input-field" placeholder="Name">
+          <input type="text" class="input-field" placeholder="Subject">
+        </div>
+        <input type="text" class="input-field" placeholder="Email">
+        <textarea class="input-field" rows="12" placeholder="Message"></textarea>
+        <app-button-m buttonText="Submit" [isIcon]="false" fontSize="14px" padding="12px 15px"></app-button-m>
+      </form>
+    </div>
+
   </div>
 </section>
