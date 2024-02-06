@@ -4,6 +4,8 @@
   padding: 20px;
 }
 .hero-profile{
+.home-section{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,4 +17,57 @@
  .Image{
    order: -1;
  }
+  width: 100%;
+}
+.home-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--blue-dark-color);
+  max-width: 1240px;
+  width: 100%;
+
+}
+.hero-follow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.profile-picture{
+  margin-right: 4rem;
+}
+.follow-me{
+  position: absolute;
+  top: 16rem;
+  right: -2rem;
+  transition: .4s;
+}
+.hero-section{
+  max-width: 90rem;
+}
+@media (max-width: 830px) {
+  .home-container{
+    flex-direction: column;
+  }
+  .hero-follow{
+    order: -1;
+    margin-bottom: 1.2rem;
+  }
+}
+@media (max-width: 1028px) {
+.follow-me{
+  top: 11rem;
+  transition: 0.4s;
+}
+  @media (max-width: 555px) {
+    .follow-me{
+      top: 6rem;
+    }
+  }
+  @media (max-width: 501px) {
+    .follow-me{
+      top: 2rem;
+    }
+  }
 }

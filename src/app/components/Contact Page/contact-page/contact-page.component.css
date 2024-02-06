@@ -1,6 +1,97 @@
+.contact-section{
+  background-color: #0E111C;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .contact-container{
   display: flex;
+  align-items: center;
   justify-content: center;
-  color: var(--blue-dark-color);
+  max-width: 1340px;
+  width: 100%;
+  gap: 50px;
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+.header{
+  color: #FFF;
+  font-family: Playfair Display;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.form-header{
+  margin-bottom: 25px;
+}
+.form{
+  width: 100%;
 
+}
+.form-container .top-input-container{
+  display: flex;
+  gap: 10px;
+}
+.form-container .input-field{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 6px;
+  border: 1px solid #979797;
+  background: rgba(151, 151, 151, 0.00);
+  color: white;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.form-container input{
+  height: 65px;
+  padding: 0px 21px;
+}
+.form textarea{
+  padding: 26px 21px;
+}
+
+.contact-info-container{
+  width: 450px;
+  height: 500px;
+}
+.contact-info-container .form-info-header{
+  margin-bottom: 15px;
+}
+.contact-info-container .info-second-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 43px;
+}
+.contact-info-container .info-subheader{
+  color: #FFF;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-info-container .info-round{
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  position: relative;
+  stroke-width: 100px;
+}
+.info-round i{
+  font-size: 25px;
 }

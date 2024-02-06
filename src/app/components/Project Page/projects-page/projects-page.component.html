@@ -10,7 +10,7 @@
 
       <div class="filter-container">
         <ul>
-          <li (click)="switchNav(0)" [class.active]="journalism"><a>Journalism</a></li>
+          <li (click)="switchNav(0)" [class.active]="allPost"><a>All</a></li>
           <li (click)="switchNav(1)" [class.active]="editing"><a>Editing</a></li>
           <li (click)="switchNav(2)" [class.active]="animation"><a>Animation</a></li>
           <li (click)="switchNav(3)" [class.active]="socialMedia"><a>Social Media</a></li>
@@ -21,11 +21,25 @@
 
     </div>
     <div class="card-container">
-      <div *ngFor="let src of srcs; let index = index" routerLink="/Projects/view">
-          <app-project-card [src]="src" title="Work Shop" role="Corresponding Director" date="2021" *ngIf="index<counter"></app-project-card>
-
+      <div *ngFor="let post of getFilter(); let index = index" routerLink="/Projects/view">
+        <ng-container *ngIf="index < counter">
+          <app-project-card [src]="post.url"
+                            [title]="post.title"
+                            [role]="post.role"
+                            [date]="post.date">
+          </app-project-card>
+        </ng-container>
       </div>
+
     </div>
-    <app-button-m padding="13px" [buttonText]="ViewButtonName" [isIcon]="false" class="view-button" fontSize="14px" (click)="viewMore()"></app-button-m>
+    <div class="view-button" >
+      <app-button-m padding="13px"
+                    [buttonText]="ViewButtonName"
+                    [isIcon]="false" fontSize="14px"
+                    (click)="viewMore()"
+                    [class.view-vis]="viewButtonVis">
+      </app-button-m>
+    </div>
   </div>
 </section>
+

@@ -40,4 +40,116 @@
     width: 290px;
   }
 
+.profile-container{
+  /*background-color: #5C6F97;*/
+  position: relative;
+  z-index: 4;
+  display: inline-block;
+
+}
+.image{
+  width: 600px;
+  transition: 0.4s;
+}
+/*.circle-background-Main{*/
+/*  width: 40px;*/
+/*  height: 40px;*/
+/*  position: relative;*/
+/*  top: -400px;*/
+/*  right: -480px;*/
+/*  transition: 0.4s;*/
+
+/*}*/
+/*.circle-background{*/
+
+/*  width: 350px;*/
+/*  height: 350px;*/
+/*  scale: 100%;*/
+/*  background-color: var(--blue-dark-color);*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  border-radius: 1000px;*/
+/*  z-index: -1;*/
+/*  transition: 0.4s;*/
+/*}*/
+/*.circle-one{*/
+/*  top: 0;*/
+/*  right: 0;*/
+/*  background-color: var(--purple-wash-color);*/
+/*}*/
+/*.circle-two{*/
+/*  top: -100px;*/
+/*  right: -90px;*/
+/*  z-index: -2;*/
+/*  background-color: rgba(104, 137, 206, 0.42);*/
+/*  border: 2px dashed rgba(10, 83, 148, 0.52);*/
+/*  backdrop-filter: blur(5px);*/
+
+/*  }*/
+
+/*.circle-three{*/
+/*  top: -50px;*/
+/*  right: -50px;*/
+
+/*  z-index: -3 ;*/
+/*}*/
+
+/*.shapes{*/
+/*  scale: 0.5;*/
+/*  position: absolute;*/
+/*  top: 30px;*/
+/*  right: 20px;*/
+
+/*  fill: rgba(92, 111, 151, 0.35);*/
+/*}*/
+/*#shape-one{*/
+/*  top: 30px;*/
+/*  transform: rotate(10deg);*/
+
+/*}*/
+/*#shape-two{*/
+/*  scale: 0.1;*/
+/*  top: 100px;*/
+/*  fill: var(--blue-dark-color);*/
+/*}*/
+/*#shape-three{*/
+/*  scale: 0.4;*/
+/*  top: 230px;*/
+/*  fill: var(--blue-light-color);*/
+/*  transform: rotate(180deg);*/
+/*}*/
+
+@media (max-width: 1028px) {
+
+  .image{
+    width: 500px;
+    transition: 0.4s;
+
+  }
+  /*.circle-background{*/
+  /*  scale: 0.7;*/
+  /*  transition: 0.4s;*/
+  /*}*/
+  /*.circle-background-Main{*/
+  /*  top: -330px;*/
+  /*  right: -380px;*/
+  /*  transition: 0.4s;*/
+  /*}*/
+}
+
+@media (max-width: 500px) {
+  .image{
+    width: 350px;
+    transition: 0.4s;
+
+  }
+  /*.circle-background{*/
+  /*  scale: 0.5;*/
+  /*  transition: 0.4s;*/
+  /*}*/
+  /*.circle-background-Main{*/
+  /*  top: -280px;*/
+  /*  right: -310px;*/
+  /*  transition: 0.4s;*/
+  /*}*/
 }

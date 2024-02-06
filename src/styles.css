@@ -7,8 +7,6 @@
   --medium-font:2.6rem;
   --small-font:1.6rem;
   --extra-small-font:1.4rem;
-
-
   --background-color:#070B13;
   --main-color: #e2174c;
   --second-color : #292929;
@@ -42,7 +40,6 @@ html{
   text-decoration:none;
   object-fit: cover;
   transition: .4s;
-
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* transparent */
 }
 
