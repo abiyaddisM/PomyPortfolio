@@ -1,0 +1,66 @@
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  width: 100%;
+}
+.welcome{
+  font-size: var(--small-font);
+  font-weight: bold;
+  padding: 1rem 1.2rem 1rem 1.2rem;
+  color: white;
+  background-color: var(--blue-dark-color);
+  width: fit-content;
+  border-radius: .6rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.welcome:hover{
+    transform: translateY(-2px);
+}
+.name{
+  font-size: var(--medium-font);
+  font-weight: bold;
+  padding: .5rem 0;
+
+}
+.job-place-holder{
+  font-size: var(--small-font);
+  margin-bottom: 1rem;
+}
+.description{
+  font-size: var(--small-font);
+  width: 100%;
+
+}
+@media (max-width: 830px){
+  .welcome{
+    margin: 0 auto;
+  }
+  .name{
+    text-align: center;
+  }
+  .job-place-holder{
+    text-align: center;
+  }
+  .description{
+    text-align: center;
+  }
+}
+@media (max-width: 502px) {
+  .welcome{
+    font-size: var(--extra-small-font);
+  }
+  .name{
+    font-size:var(--small-font);
+
+  }
+  .job-place-holder{
+    font-size: var(--extra-small-font);
+  }
+  .description{
+    font-size: var(--extra-small-font);
+  }
+
+}
