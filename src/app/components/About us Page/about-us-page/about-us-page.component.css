@@ -1,7 +1,7 @@
 .about-us-section{
   display: flex;
   justify-content: center;
-
+  min-height: 84vh;
   padding: 0 40px;
 }
 .title{

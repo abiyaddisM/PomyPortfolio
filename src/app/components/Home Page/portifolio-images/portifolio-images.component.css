@@ -1,8 +1,10 @@
 .portifolio-images{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 130px;
   background: #121523;
+  padding: 15px;
 }
 
 @media (max-width:1028px){

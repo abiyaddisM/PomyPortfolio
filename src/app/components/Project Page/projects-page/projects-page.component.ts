@@ -25,19 +25,7 @@ export class ProjectsPageComponent implements OnInit{
   editing=false;
   animation=false;
   socialMedia =false;
-  srcs=[
-    'https://upload.wikimedia.org/wikipedia/commons/b/b7/Blender_2.81-splash.png'
-    ,'https://i.ytimg.com/vi/IrRHlMIykwk/maxresdefault.jpg'
-    ,'https://upload.wikimedia.org/wikipedia/commons/c/cf/Blender_3.0-splash_screen.png'
-    ,'https://e0.365dm.com/22/10/2048x1152/skysports-world-cup-qatar-2022_5921764.jpg?20221006085810'
-    ,'https://render.fineartamerica.com/images/rendered/search/poster/24/18/break/images/artworkimages/medium/1/to-the-beat-of-the-drum-larry-poncho-brown.jpg'
-    ,'https://graffitinetwerk.nl/wp-content/uploads/2023/01/Street-Art-tours-de-voors-en-tegens.jpg.webp'
-    ,'https://img.freepik.com/free-vector/gradient-ui-ux-elements-collection_79603-1923.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702080000&semt=ais'
-    ,'https://img.freepik.com/free-vector/gradient-ui-ux-elements-collection_79603-1923.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702080000&semt=ais'
-    ,'https://img.freepik.com/free-vector/gradient-ui-ux-elements-collection_79603-1923.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702080000&semt=ais'
-    ,'https://img.freepik.com/free-vector/gradient-ui-ux-elements-collection_79603-1923.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702080000&semt=ais'
-    ,'https://img.freepik.com/free-vector/gradient-ui-ux-elements-collection_79603-1923.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702080000&semt=ais'
-  ]
+
   switchNav(pressed: number) {
     this.allPost = pressed === 0;
     this.editing = pressed === 1;

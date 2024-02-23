@@ -12,9 +12,9 @@ import { ContactPageComponent } from './components/Contact Page/contact-page/con
 import { ProfilePictureComponent } from './components/Home Page/profile-picture/profile-picture.component';
 import {NgOptimizedImage} from "@angular/common";
 import { HeroSectionComponent } from './components/Home Page/hero-section/hero-section.component';
-import { HomeFollowMeComponent } from './components/Home Page/home-follow-me/home-follow-me.component';
-import { ContactHeroComponent } from './components/Contact Page/contact-hero/contact-hero.component';
-import { ContactInputComponent } from './components/Contact Page/contact-input/contact-input.component';
+// import { HomeFollowMeComponent } from './components/Home Page/home-follow-me/home-follow-me.component';
+// import { ContactHeroComponent } from './components/Contact Page/contact-hero/contact-hero.component';
+// import { ContactInputComponent } from './components/Contact Page/contact-input/contact-input.component';
 import { AboutParagraphComponent } from './components/About us Page/about-paragraph/about-paragraph.component';
 import { ProjectCardComponent } from './components/Project Page/project-card/project-card.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -24,6 +24,7 @@ import { ButtonNathanComponent } from './components/Global/button-nathan/button-
 import { PortifolioImagesComponent } from './components/Home Page/portifolio-images/portifolio-images.component';
 import {CollapsDirective, pressDirective} from './directive/collaps.directive';
 import {HttpClientModule} from "@angular/common/http";
+import { MainPageComponent } from './components/main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -36,24 +37,26 @@ import {HttpClientModule} from "@angular/common/http";
     ContactPageComponent,
     ProfilePictureComponent,
     HeroSectionComponent,
-    HomeFollowMeComponent,
-    ContactHeroComponent,
-    ContactInputComponent
+    // HomeFollowMeComponent,
+    // ContactHeroComponent,
+    // ContactInputComponent
     AboutParagraphComponent,
     ProjectCardComponent,
     FooterComponent,
     ProjectsViewComponent,
     AboutUsImageComponent,
     ButtonNathanComponent,
-    PortifolioImagesComponent
+    PortifolioImagesComponent,
     CollapsDirective,
     CollapsDirective,
-    pressDirective
+    pressDirective,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([
+      {path: '', component: MainPageComponent},
       {path: 'Home', component: HomePageComponent},
       {path: 'About-Us', component: AboutUsPageComponent},
       {path: 'Projects', component: ProjectsPageComponent},

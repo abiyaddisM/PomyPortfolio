@@ -1,24 +1,35 @@
 
 .home-page-container{
   width: 100%;
-  padding: 20px;
+  min-height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.hero-profile{
 .home-section{
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
-@media (max-width: 1028px) {
-  .hero-profile{
+.portifolio-image{
+  width: 100%;
+}
+home-container{
+  display: flex;
+}
+/*@media (max-width: 1028px) {
+  .home-container{
     flex-direction: column;
   }
  .Image{
    order: -1;
  }
-  width: 100%;
-}
+
+}*/
+
 .home-container{
   display: flex;
   justify-content: space-between;
@@ -35,7 +46,7 @@
 
 }
 .profile-picture{
-  margin-right: 4rem;
+  /*margin-right: 4rem;*/
 }
 .follow-me{
   position: absolute;
@@ -46,7 +57,10 @@
 .hero-section{
   max-width: 90rem;
 }
-@media (max-width: 830px) {
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 1028px) {
   .home-container{
     flex-direction: column;
   }
@@ -54,8 +68,6 @@
     order: -1;
     margin-bottom: 1.2rem;
   }
-}
-@media (max-width: 1028px) {
 .follow-me{
   top: 11rem;
   transition: 0.4s;
